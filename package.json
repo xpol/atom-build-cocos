@@ -1,6 +1,6 @@
 {
   "name": "build-cocos",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Runs cocos comand to build cocos2d-x C++/Lua/Web projects",
   "repository": "https://github.com/xpol/build-cocos",
   "license": "MIT",

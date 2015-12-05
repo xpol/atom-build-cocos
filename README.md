@@ -1,6 +1,6 @@
 # Cocos build for Atom
 
-Runs [cocos][] command in the `Atom` editor.
+Runs [cocos][] commands in the `Atom` editor.
 
 Supports `compile`, `deploy` and `run` inside `Atom`.
 Captures build errors and Lua script runtime errors, provides error link to source code.

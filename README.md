@@ -41,7 +41,7 @@ local traceback = __G__TRACKBACK__
 
 function __G__TRACKBACK__(msg)
   traceback(msg)
-  if EXIT_ON_ERROR then os.exit(1) end -- Setup EXIT_ON_ERROR in your config.lua
+  os.exit(1) -- exit on error so that the error will be parsed by atom-build.
 end
 
 xpcall(main, __G__TRACKBACK__)

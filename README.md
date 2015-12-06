@@ -15,7 +15,7 @@ This package requires [atom-build][] to be installed.
 	* In Atom -> Preferences... -> Packages -> build-cocos -> Settings -> Set the `Global cocos console path`. eg: `/Users/xpol/Workspace/cocos2d-x/tools/cocos2d-console`.
 	* Have a project local copy of cocos-console in you project in `framewroks/cocos2d-x/tools/cocos2d-console`.
 3. For Lua project
-  * You need the `cocos-console` with this [pending pull request](https://github.com/cocos2d/cocos2d-console/pull/320) to captures the runtime errors.
+  * You need the `cocos-console` with this [pending pull request (please help up vote)](https://github.com/cocos2d/cocos2d-console/pull/320) to captures the runtime errors.
 	* Set Lua package path to have `src/?.lua;` rather than add `src/` to FileUtils' search path, see example `main.lua`.
 	* Make a `xpcall` to your main function and call `os.exit(1)` in error handler. see example `main.lua`.
 4. After that, in Atom open you project root directory which contains `.cocos-project.json`, run `cmd-alt-t` / `ctrl-alt-t` / `f7` to displays the available build targets.

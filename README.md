@@ -26,15 +26,15 @@ Supports run `cocos compile`, `cocos deploy` and `cocos run` commands inside `At
 * Linux: Run
 * Linux: Run without build
 
-![](images/targets.png)
+![Targets](images/targets.png)
 
 ### Captures Build and Run Errors
 
 * Captures build errors and Lua script runtime errors.
 * Provides error link to source code.
 
-![](images/cpp-errors.png)
-![](images/lua-errors.png)
+![Cpp Errors](images/cpp-errors.png)
+![Lua Errors](images/lua-errors.png)
 
 ## Setup
 

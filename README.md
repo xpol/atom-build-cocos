@@ -26,15 +26,15 @@ Supports run `cocos compile`, `cocos deploy` and `cocos run` commands inside `At
 * Linux: Run
 * Linux: Run without build
 
-![Targets](images/targets.png)
+![Targets](https://raw.githubusercontent.com/xpol/build-cocos/master/images/targets.png)
 
 ### Captures Build and Run Errors
 
 * Captures build errors and Lua script runtime errors.
 * Provides error link to source code.
 
-![Cpp Errors](images/cpp-errors.png)
-![Lua Errors](images/lua-errors.png)
+![Cpp Errors](https://raw.githubusercontent.com/xpol/build-cocos/master/images/cpp-errors.png)
+![Lua Errors](https://raw.githubusercontent.com/xpol/build-cocos/master/images/lua-errors.png)
 
 ## Setup
 

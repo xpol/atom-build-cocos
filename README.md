@@ -2,11 +2,39 @@
 
 Runs [cocos][] commands in the `Atom` editor.
 
-Supports `compile`, `deploy` and `run` inside `Atom`.
-Captures build errors and Lua script runtime errors, provides error link to source code.
-
 This package requires [atom-build][] to be installed.
 
+## Features
+
+### Add Build Targets for Cocos2d-x Projects
+
+Supports run `cocos compile`, `cocos deploy` and `cocos run` commands inside `Atom`.
+
+* Android: Build
+* Android: Deploy
+* Android: Run
+* iOS: Build
+* Web: Build
+* Web: Run
+* Mac: Build
+* Mac: Run
+* Mac: Run without build
+* Win32: Build
+* Win32: Run
+* Win32: Run without build
+* Linux: Build
+* Linux: Run
+* Linux: Run without build
+
+![](images/targets.png)
+
+### Captures Build and Run Errors
+
+* Captures build errors and Lua script runtime errors.
+* Provides error link to source code.
+
+![](images/cpp-errors.png)
+![](images/lua-errors.png)
 
 ## Setup
 

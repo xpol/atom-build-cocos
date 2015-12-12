@@ -1,7 +1,7 @@
 {
   "name": "build-cocos",
   "version": "0.3.3",
-  "description": "Runs cocos comand to build cocos2d-x C++/Lua/Web projects",
+  "description": "Runs cocos comand to build cocos2d-x C++/Lua/Javascript projects",
   "repository": "https://github.com/xpol/build-cocos",
   "license": "MIT",
   "main": "lib/cocos.js",
@@ -23,10 +23,11 @@
   "keywords": [
     "build",
     "compile",
+    "run",
     "cocos2d-x",
     "c++",
     "lua",
-    "js",
+    "javascript",
     "productivity"
   ],
   "eslintConfig": {

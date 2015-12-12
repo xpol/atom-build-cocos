@@ -14,7 +14,7 @@ Build targets for a Lua project:
 
 ![Targets](https://raw.githubusercontent.com/xpol/build-cocos/master/images/targets.png)
 
-### Captures Build and Run Errors
+### Captures Build and Runtime Errors
 
 * Captures build errors and Lua script runtime errors.
 * Provides error link to source code.
@@ -29,12 +29,12 @@ Lua runtime errors:
 
 ## Setup
 
-1. Install [atom-build][] and this [build-cocos][] package.
+1. Install [atom-build][] and this [build-cocos][] package `apm install build build-cocos`.
 2. To setup cocos path you have two options either:
   * In Atom -> Preferences... -> Packages -> build-cocos -> Settings -> Set the `Global cocos console path`. eg: `/Users/xpol/Workspace/cocos2d-x/tools/cocos2d-console`.
   * Have a project local copy of cocos-console in you project in `framewroks/cocos2d-x/tools/cocos2d-console`.
 3. For Lua project
-  * You need the `cocos-console` with this [pending pull request (please help up vote)](https://github.com/cocos2d/cocos2d-console/pull/320) to captures the runtime errors.
+  * You need [master branch of my fork of `cocos-console`][cocos-fork] (up vote this [pending pull request](https://github.com/cocos2d/cocos2d-console/pull/320) to make it official) to run simulator and captures the runtime Lua errors.
   * Set Lua package path to have `src/?.lua;` rather than add `src/` to FileUtils' search path, see example `main.lua`.
   * Make a `xpcall` to your main function and call `os.exit(1)` in error handler. see example `main.lua`.
 4. After that, in Atom open you project root directory which contains `.cocos-project.json`, run `cmd-alt-t` / `ctrl-alt-t` / `f7` to displays the available build targets.
@@ -74,4 +74,5 @@ Ideas, bugs and pull requests please go to GitHub [xpol/build-cocos][repo].
 [atom-build]: https://atom.io/packages/build
 [build-cocos]: https://atom.io/packages/build-cocos
 [cocos]: https://github.com/cocos2d/cocos2d-console
+[cocos-fork]: https://github.com/xpol/cocos2d-console
 [repo]: https://github.com/xpol/build-cocos

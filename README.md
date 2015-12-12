@@ -10,21 +10,6 @@ This package requires [atom-build][] to be installed.
 
 Supports run `cocos compile`, `cocos deploy` and `cocos run` commands inside `Atom`.
 
-* Android: Build
-* Android: Deploy
-* Android: Run
-* iOS: Build
-* Web: Build
-* Web: Run
-* Mac: Build
-* Mac: Run
-* Mac: Run without build
-* Win32: Build
-* Win32: Run
-* Win32: Run without build
-* Linux: Build
-* Linux: Run
-* Linux: Run without build
 
 ![Targets](https://raw.githubusercontent.com/xpol/build-cocos/master/images/targets.png)
 

@@ -18,7 +18,12 @@ Supports run `cocos compile`, `cocos deploy` and `cocos run` commands inside `At
 * Captures build errors and Lua script runtime errors.
 * Provides error link to source code.
 
+Cpp build errors:
+
 ![Cpp Errors](https://raw.githubusercontent.com/xpol/build-cocos/master/images/cpp-errors.png)
+
+Lua runtime errors:
+
 ![Lua Errors](https://raw.githubusercontent.com/xpol/build-cocos/master/images/lua-errors.png)
 
 ## Setup

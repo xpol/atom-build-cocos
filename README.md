@@ -10,6 +10,7 @@ This package requires [atom-build][] to be installed.
 
 Supports run `cocos compile`, `cocos deploy` and `cocos run` commands inside `Atom`.
 
+Build targets for a Lua project:
 
 ![Targets](https://raw.githubusercontent.com/xpol/build-cocos/master/images/targets.png)
 

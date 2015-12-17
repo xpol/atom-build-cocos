@@ -46,7 +46,7 @@
       ],
       "quotes": [
         2,
-        "double"
+        "single"
       ],
       "space-after-keywords": 2,
       "space-before-blocks": 2,

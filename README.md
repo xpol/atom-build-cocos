@@ -1,14 +1,32 @@
 # Cocos build for Atom
 
-Runs [cocos][] commands in the `Atom` editor.
+Runs cocos2d-x tasks like **build**, **deploy**, **run**, and **release** in the `Atom` editor.
+And captures build and runtime errors.
 
-This package requires [atom-build][] to be installed.
+This package requires [atom-build][] and [cocos-console][cocos] to be installed.
+
+
+## How It Works
+
+A project are consider as a cocos2d-x project if there is a `.cocos-project.json`
+at project root. And it takes `project_type` key in this file for the project
+type (**cpp**|**lua**|**js**).
+
+For `Run simulator without build` tasks, it find simulator executable name in:
+
+* `init_cfg.name` in `config.json` for **lua** projects
+* `name` in `manifest.webapp` for **js** projects.
+
+and runs debug build executables create by `cocos compile -p mac|win32` as simulator.
+
+Do make sure the above config are correct for your project and
+`cocos compile -p mac|win32` commands works well.
 
 ## Features
 
 ### Add Build Targets for Cocos2d-x Projects
 
-Supports run `cocos compile`, `cocos deploy` and `cocos run` commands inside `Atom`.
+Supports run **build**, **deploy**, **run**, and **release** tasks inside `Atom`.
 
 Build targets for a Lua project:
 
@@ -27,6 +45,17 @@ Lua runtime errors:
 
 ![Lua Errors](https://raw.githubusercontent.com/xpol/build-cocos/master/images/lua-errors.png)
 
+### Support Additional Configure in .cocos-project.json
+
+Additional key for `.cocos-project.json`:
+
+* `androidStudio`: Set `true` to build Android Studio project in `proj.android-studio` rather than `proj.android`. Default `false`.
+* `iosCodeSignIdentity`: iOS code sign identity used to run `iOS: Release` target. eg. `iPhone Distribution: xxx... (XXXXXXXXXX)`.
+* `luaEncrypt`: Set `false` to disable encryption of Lua scripts when run `Release` targets. Default `true`.
+* `luaEncryptKey`: The key used to encrypt Lua scripts when run `Release` targets. Default `2dxLua`.
+* `luaEncryptSign`: File signature for encrypted Lua script files when run `Release` targets. Default `XXTEA`
+
+
 ## Setup
 
 1. Install [atom-build][] and this [build-cocos][] package `apm install build build-cocos`.
@@ -38,8 +67,12 @@ Lua runtime errors:
   * Set Lua package path to have `src/?.lua;` rather than add `src/` to FileUtils' search path, see example `main.lua`.
   * Make a `xpcall` to your main function and call `os.exit(1)` in error handler. see example `main.lua`.
 4. After that, in Atom open you project root directory which contains `.cocos-project.json`, run `cmd-alt-t` / `ctrl-alt-t` / `f7` to displays the available build targets.
+5. Set `.cocos-project.json`:
+  * Set `iosCodeSignIdentity` if you needs build iOS release ipa.
+  * For **lua** projects, set `luaEncrypt` `luaEncryptKey` and `luaEncryptSign` to enable encryption for Lua scripts.
+  * Android projects, set `androidStudio` if you want build in project in `proj.android-studio`.
 
-## Example
+**Examples**
 
 
 `src/main.lua`

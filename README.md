@@ -58,7 +58,7 @@ Additional key for `.cocos-project.json`:
 
 ## Setup
 
-1. Install [atom-build][] and this [build-cocos][] package `apm install build build-cocos`.
+1. Install [atom-build][] and this [atom-build-cocos][] package `apm install build build-cocos`.
 2. To setup cocos path you have two options either:
   * In Atom -> Preferences... -> Packages -> build-cocos -> Settings -> Set the `Global cocos console path`. eg: `/Users/xpol/Workspace/cocos2d-x/tools/cocos2d-console`.
   * Have a project local copy of cocos-console in you project in `framewroks/cocos2d-x/tools/cocos2d-console`.
@@ -102,10 +102,10 @@ xpcall(main, __G__TRACKBACK__)
 
 ## Contribute
 
-Ideas, bugs and pull requests please go to GitHub [xpol/build-cocos][repo].
+Ideas, bugs and pull requests please go to GitHub [xpol/atom-build-cocos][repo].
 
 [atom-build]: https://atom.io/packages/build
-[build-cocos]: https://atom.io/packages/build-cocos
+[atom-build-cocos]: https://atom.io/packages/build-cocos
 [cocos]: https://github.com/cocos2d/cocos2d-console
 [cocos-fork]: https://github.com/xpol/cocos2d-console
-[repo]: https://github.com/xpol/build-cocos
+[repo]: https://github.com/xpol/atom-build-cocos

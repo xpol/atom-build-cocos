@@ -49,7 +49,7 @@ Lua runtime errors:
 
 Additional key for `.cocos-project.json`:
 
-* `androidABI`: Set `true` to build Android Studio project in `proj.android-studio` rather than `proj.android`. Default `false`.
+* `androidABI`: Set `APP_ABI` for Android build, multiple abi can be set like `armeabi-v7a:x86`. Default `armeabi`.
 * `androidStudio`: Set `true` to build Android Studio project in `proj.android-studio` rather than `proj.android`. Default `false`.
 * `iosCodeSignIdentity`: iOS code sign identity used to run `iOS: Release` target. eg. `iPhone Distribution: xxx... (XXXXXXXXXX)`.
 * `luaEncrypt`: Set `false` to disable encryption of Lua scripts when run `Release` targets. Default `true`.
